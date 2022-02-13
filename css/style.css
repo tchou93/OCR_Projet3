@@ -15,20 +15,17 @@ body {
     margin: 0;
 }
 
-.main-wrapper, footer {
-    max-width: 767px;
+.main-wrapper{
+    max-width: 100%;
     max-height: 100%; 
     margin-left: auto;
     margin-right: auto;
 }
 
-.header-wrapper, .localisation-wrapper, .reservation-wrapper, .fonctionnement-wrapper,.card-restaurant-wrapper {
+.header-wrapper, .localisation-wrapper, .fonctionnement-wrapper,.card-restaurant-wrapper {
     margin: 0 20px 0 20px;  
 }
 
-.footer-wrapper {
-    padding-left: 20px;
-}
 
 /* ------------------ */
 /* Font size managing */
@@ -39,34 +36,49 @@ body {
     font-weight: 500;
 }
 
-.localisation-font-size{
+.localisation-font-size {
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
+.explore-font-size {
+    font-size: 1rem;
+    font-weight: 100;
+}
 
-
-.reservation-font-size{
+.reservation-font-size {
     font-weight: 700;
     font-size: 1.6rem;
 }
 
-.main-font-size-description{
+.main-font-size-description {
     font-size: 1.2rem;
+    font-weight: 300;
 }
 
-.font-size-title-card{
+.fonctionnement-title-font-size {
+    font-weight: 700;
+    font-size: 1.5rem;
 }
+
+.fonctionnement-font-size {
+    font-size: 1rem;
+    font-weight: 500;   
+}
+
+.fonctionnement-number-font-size {
+    font-size: 0.8rem;
+    font-weight: 500;   
+}
+
+/* .font-size-title-card{
+} */
 
 .footer-title-font-size{
    font-family: 'Shrikhand', cursive;
+   color: white;
+   font-weight: 500;
 }
-
-.footer-font-size-description{
-}
-
-
-
 
 /* Header part (text + lien sur les restaurants)  */
 .header-wrapper {
@@ -95,9 +107,25 @@ body {
     justify-content: center;
     text-align: center;
     background-color: rgba(243, 241, 241, 0.945);
-    margin-left: 0;
-    margin-right: 0;
     padding: 20px 30px 40px 30px;
+}
+
+.explore-restaurant-link {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 30px auto;
+    border-radius: 28px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0 2px 4px #636363cc;
+    padding: 0 20px 0 20px;
+}
+
+.explore-restaurant-link p {
+    color: white;
+    font-weight: bold;
 }
 
 /* Fonctionnement section part */
@@ -108,21 +136,73 @@ body {
     padding:0;
 }
 
-.fonctionnement-wrapper ul li {
+.fonctionnement-link {
     display: flex;
-    justify-content: center;
     align-items: center;
-    /* position: absolute; */
-    width: 100%;
-    height: 72px;
-
-    border: solid 2px #c2bdbd8c;
+    background: #ececec;
     border-radius: 20px;
-    margin-bottom: 20px;
-    /* padding: 16px 23% 16px 23%; */
+    margin: 10px 20px 10px 25px;
+    box-shadow: 2px 2px 7px #d3d3d3;
+    text-decoration: none;
+    color: black;
 }
 
-.fa-money-bill-wave {
-    /* position: relative; */
-    padding-right: 20px;
+.fonctionnement-link p {
+    margin: 0;
 }
+
+.fonctionnement-content-circle-icon {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0 -10px;
+    background-color: #9356DC;
+    color: #ffffff;
+}
+
+.fonctionnement-link i {
+    display: flex;
+    flex:1;
+    justify-content: center;
+    color: #636363cc;
+    text-decoration: none;
+}
+.fonctionnement-link p {
+    display: flex;
+    padding: 27px;
+    flex:2;    
+    text-decoration: none;
+}
+
+/* Restaurant section part */
+/* TBD */
+
+/* Footer part  */
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #726f6f;
+}
+
+.footer-wrapper ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.footer-wrapper li {
+    padding-top: 6px;
+}
+.footer-wrapper i {
+    padding-right: 10px;
+}
+.footer-wrapper i,a {
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+
