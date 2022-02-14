@@ -1,0 +1,204 @@
+/* ------------------ */
+/* General parameters */
+/* ------------------ */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.main-wrapper{
+    max-width: 100%;
+    max-height: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-wrapper, .menu-a-la-francaise{
+    padding: 0 20px 0 20px;  
+}
+
+
+/* ------------------ */
+/* Font size managing */
+/* ------------------ */
+
+.header-title-font-size, .menu-title-font-size {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+
+.menu-bloc-font-size {
+    font-size: 1rem;
+}
+
+.menu-bloc-title-font-size {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.menu-bloc-content-font-size {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.menu-bloc-price-font-size {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.menu-order-font-size {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer-title-font-size{
+   font-family: 'Shrikhand', cursive;
+   color: white;
+   font-weight: 500;
+}
+
+/* Header part (text + lien sur les restaurants)  */
+.header-wrapper {
+    display: flex;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;/
+}
+
+.header-wrapper h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* menu image section part */
+.image-menu {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* menu section part */
+.menu-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(235, 235, 240);
+    border-radius: 43px 43px 0 0;
+    margin-top: -50px;
+    padding-bottom: 10px;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-heart {
+    font-size: 1.5rem;
+}
+
+
+.menu-bloc {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+}
+
+.menu-bloc-line {
+    background-color: #99E2D0;
+    margin-top: 3px;
+    height: 3px;
+    width: 42px;
+}
+
+
+.menu-bloc-list {
+    margin-top: 15px;
+}
+
+.menu-bloc-item {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background: white;
+    border-radius: 20px;
+
+    padding: 15px 20px 15px 15px;
+    box-shadow: 2px 2px 7px #d3d3d3;
+    /* text-decoration: none; */
+    color: black;
+    margin-bottom: 15px;
+}
+
+.menu-bloc-content_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-order-link {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    margin: 30px auto;
+    border-radius: 28px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0 2px 4px #636363cc;
+    padding: 0 20px 0 20px;
+}
+
+/* Footer part  */
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #726f6f;
+}
+
+.footer-wrapper ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.footer-wrapper li {
+    padding-top: 6px;
+}
+
+.footer-wrapper i {
+    padding-right: 10px;
+}
+
+.footer-wrapper i,a {
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+
