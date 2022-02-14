@@ -129,19 +129,13 @@ body {
 }
 
 /* Fonctionnement section part */
-.fonctionnement-wrapper ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:0;
-}
 
 .fonctionnement-link {
     display: flex;
     align-items: center;
     background: #ececec;
     border-radius: 20px;
-    margin: 10px 20px 10px 25px;
+    margin: 10px;
     box-shadow: 2px 2px 7px #d3d3d3;
     text-decoration: none;
     color: black;
@@ -178,7 +172,78 @@ body {
 }
 
 /* Restaurant section part */
-/* TBD */
+
+.card-restaurant-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-restaurant {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 101, 252, 0.2);
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.card-restaurant-image {
+    width: 100%;
+    height: calc(100% - 70px);
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-restaurant-new {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: #99E2D0;
+    border-radius: 2px;
+}
+
+.card-restaurant-new p {
+    display: block;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #278870;
+    font-weight: 500;
+    padding: 8px;
+    margin: 0;
+}
+
+.card-restaurant-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 25px;
+    color: black;
+}
+
+.card-restaurant-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-restaurant-description h3, .card-restaurant-description p {
+    margin: 0;
+}
+
+.card-restaurant-description h3{
+    padding-bottom: 3px;
+}
+
+.fa-heart{
+    font-size: 1.5rem;
+}
 
 /* Footer part  */
 
@@ -187,6 +252,7 @@ body {
     flex-direction: column;
     padding: 20px;
     background-color: #726f6f;
+    margin-top: 50px;
 }
 
 .footer-wrapper ul {
