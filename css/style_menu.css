@@ -239,12 +239,6 @@ body {
 
 
 @media screen and (max-width: 767px) {
-
-    .menu-bloc-list {
-        flex-wrap: none;
-        justify-content: none;
-    }
-    
     .menu-bloc-item {
         width: 100%;
     }
@@ -255,11 +249,9 @@ body {
 
     .footer-wrapper h3 {
         display: block;
-        justify-content: none;
     }
     .footer-wrapper ul {
         display:block;
-        justify-content:none;
     }
 
     .footer-wrapper li {
