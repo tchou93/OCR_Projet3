@@ -26,7 +26,7 @@ body {
     margin-right: auto;
 }
 
-.header-wrapper, .localisation-wrapper, .fonctionnement-wrapper,.card-restaurant-wrapper {
+.localisation-wrapper, .fonctionnement-wrapper,.card-restaurant-wrapper {
     margin: 0 20px 0 20px;  
 }
 
@@ -98,7 +98,17 @@ body {
 
 /* Header part (text + lien sur les restaurants)  */
 .header-wrapper {
-    text-align: center;
+    display: flex;
+    position:sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3000;
+}
+
+.header-wrapper h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 /* localisation section part */
